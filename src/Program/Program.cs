@@ -27,8 +27,8 @@ namespace Full_GRASP_And_SOLID
             recipe.AddStep("Dejar enfriar", 60);
 
             IPrinter printer;
-            printer = new ConsolePrinter();
-            printer.PrintRecipe(recipe);
+            ConsolePrinter consolePrinter = new ConsolePrinter();
+            consolePrinter.PrintRecipe(recipe);
             printer = new FilePrinter();
             printer.PrintRecipe(recipe);
         }
